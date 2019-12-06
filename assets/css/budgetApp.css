@@ -1,0 +1,202 @@
+button {
+	font-family: 'Sulphur Point', sans-serif;
+}
+
+/*navbar*/
+
+.navbar {
+	background: #5568bd;
+}
+
+.navbar-brand {
+	padding-left: 15px;
+	color: white;
+	font-family: 'Lobster', cursive;
+}
+
+.brand-i {
+	font-size: 20px;
+	margin: 10px;
+}
+
+.navbar-brand:hover {
+	color: white;
+}
+
+/*jumbotron*/
+
+.status {
+	width: 100%;
+	height: 200px;
+	background-color: #f7f7f7;
+	padding: 35px;
+	margin-top: 25px;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	font-size: 40px;
+	font-family: 'Sulphur Point', sans-serif;
+}
+
+.status-text {
+	font-size: 15px;
+}
+
+span {
+	float: left;
+	text-align: center;
+	width: 350px;
+}
+
+.span-grp {
+	border-right: 0.020px solid grey ;
+}
+
+/*columns*/
+
+.column {
+	float: left;
+	padding: 20px;
+}
+
+/*1st column*/
+
+.column.col1 {
+	width: 35%;
+}
+
+#budget-submit {
+	margin-bottom: 25px;
+}
+
+#edit-budget {
+	margin: 25px 0;
+}
+
+label {
+	font-family: 'Kanit', sans-serif;
+}
+
+#edit-message {
+	font-family: 'Kanit', sans-serif;
+}
+
+.edit-budget {
+	margin-top: 5px;
+}
+
+.create-budget {
+	margin-bottom: 10px;
+}
+
+.clearDisplay {
+	display: none;
+}
+
+#new-budget {
+	display: none;
+}
+
+#edit-budget {
+	display: none;
+}
+
+#form {
+	display: none;
+}
+
+.getDisplay {
+	display: block;
+}
+/*2nd column*/
+
+.column.col2 {
+	width: 65%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#list-head {
+	background-color: #5568bd;
+	color: white;
+}
+
+table {
+	width: 100%;
+	margin: 5px;
+}
+
+tbody {
+	border: 0.5px solid #f7f7f7;
+}
+
+#table-date {
+	border-top-left-radius: 10px;
+}
+
+#table-amount{
+	border-top-right-radius: 10px;
+}
+
+#expense-list td, #expense-list th {
+  padding: 10px;
+}
+
+tr:nth-child(2n) {
+	background: #f7f7f7;
+	box-sizing: border-box;
+}
+
+@media screen and (max-width: 800px) {
+	.column.col1 {
+		width: 100%;
+		padding-bottom: 2px;
+	}
+
+	.column.col2 {
+		width: 100%;
+		padding-top: 2px;
+	}
+
+	.status {
+		font-size: 20px;
+		height: 150px;
+	}
+
+	table {
+		font-size: 12px;
+		margin: 0px;
+	}
+
+	.brand-i {
+		margin: 5px;
+	}
+
+	.navbar {
+		justify-content: center;
+	}
+}
+
+/*responsiveness*/
+@media screen and (max-width: 400px) {
+	.status {
+		font-size: 15px;
+		height: 130px;
+	}
+
+	table {
+		font-size: 10px;
+		margin: 0px;
+	}
+
+	h5 {
+		font-size: 15px;
+	}
+}
+
+

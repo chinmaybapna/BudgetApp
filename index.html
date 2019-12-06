@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Kanit|Lobster|Sulphur+Point&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/budgetApp.css">
+	<script src="https://kit.fontawesome.com/73cecacda3.js" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BudgetApp</title>
+</head>
+<body>
+	<nav class="navbar">
+  		<a class="navbar-brand" href="#"><i class="fas fa-hand-holding-usd brand-i"></i>BudgetApp</a>
+	</nav>
+	<div class="container">
+		<div class="status">
+			<span class="span-grp">
+				<div><i class="fas fa-rupee-sign"></i></div>
+				<div id="budget-display">--</div>
+				<div class="status-text">Budget</div>
+				</span>
+			<span class="span-grp">
+				<div><i class="fas fa-coins"></i></div>
+				<div id="spent-display">--</div>
+				<div class="status-text">Spent</div>
+			</span>
+			<span>
+				<div><i class="fas fa-wallet"></i></div>
+				<div id="left-display">--</div>
+				<div class="status-text">Left</div>
+			</span>
+		</div>
+
+		<div class="row">
+			<div class="column col1">
+				<form id="budget-submit">
+					<div class="form-group">
+					   	<label><h5>Enter Your Budget :</h5></label>
+					    <input type="number" class="form-control" name="budget" id="budget" placeholder="Enter Budget">
+					</div>
+					<button type="button" onclick="addToBudget()" class="btn btn-outline-primary btn-sm">Add Budget</button>
+				</form>
+				<form id="form">
+				  <div class="form-group">
+				  	<h5>Enter the Details of your Expense :</h5>
+				    <label>Description :</label>
+				    <input class="form-control" name="description" id="description" placeholder="Enter Description" maxlength="30">
+				  </div>
+				  <div class="form-group">
+				    <label>Amount :</label>
+				    <input type="number" class="form-control" name="amount" id="amount" placeholder="Enter Amount">
+				  </div>
+				  <button type="button" onclick="addToExpense()" class="btn btn-outline-primary btn-sm">Add Expense</button>
+				</form>
+				<div id="edit-budget">
+					<div id="edit-message">Edit Your Budget :
+					<button type="button" onclick="editBudgetForm()" class="btn btn-outline-primary btn-sm edit-budget">Edit Budget</button></div>
+				</div>
+				<form id="new-budget">
+					<div class="form-group">
+						<label><h5>Enter New Budget :</h5></label>
+					    <input type="number" class="form-control" name="budgetEdit" id="budgetEdit" placeholder="Enter New Budget">
+					</div>
+					<button type="button" onclick="editBudget()" class="btn btn-outline-primary btn-sm create-budget">Create New Budget</button>
+				</form>
+			</div>
+			<div class="column col2">
+				<table id="expense-list">
+				  <tr id="list-head">
+				    <th id="table-date">Date</th>
+				    <th>Description</th>
+				    <th id="table-amount">Amount</th>
+				  </tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="assets/javascript/budgetApp.js"></script>
+</html>
