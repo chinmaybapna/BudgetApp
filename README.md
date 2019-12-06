@@ -9,6 +9,6 @@
   </ul>
 <h3>Technologies and Resource Used :</h3>
 <p>technologies and frameworks used - HTML, CSS, VanillaJs DOM, Bootstrap(only for nav-bars and forms), to add responsiveness I have used media queries.</p>
-<div>all the icons are from font awesome, and font styles are used from google fonts.</div>
+<div>All the icons are from font awesome, and font styles are taken from google fonts.</div>
 <h3>Link :</h3>
 <p>link to the web-page: https://chinmaybapna.github.io/budgetApp/index.html</p>
